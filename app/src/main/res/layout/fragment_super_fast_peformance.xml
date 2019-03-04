@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/super_fast_frame_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SuperFastPeformanceFragment"
+    android:background="@color/colorAccent">
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_layout"
+            android:layout_centerInParent="true"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/processor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_save"/>
+            <ImageView
+                android:id="@+id/ram"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_save"/>
+            <ImageView
+                android:id="@+id/os"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_save"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

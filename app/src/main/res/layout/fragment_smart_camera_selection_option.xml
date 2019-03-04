@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SmartCameraSelectionOptionFragment"
+    android:background="@drawable/smart_camera_selection_option_screen"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginLeft="@dimen/margin">
+
+            <ImageView
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:id="@+id/rear_camera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/rear_camera"/>
+
+            <ImageView
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:id="@+id/selfie_camera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/selfie_camera"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/image_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginRight="@dimen/margin"-->
+            <!--android:layout_marginLeft="@dimen/margin"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/height_layout"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:weightSum="2">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/video_btn1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/ic_save"/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/video_btn2"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/ic_save"/>-->
+
+        <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+
+</FrameLayout>
